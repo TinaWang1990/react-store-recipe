@@ -1,0 +1,126 @@
+:root{
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
+  --mainPink: rgb(179, 100, 82);
+}
+body{
+  font-family: 'Oswald', sans-serif !important;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+}
+
+.App {
+  min-height: 100vh;
+  background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+}
+.search-form{
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar{
+  width: 50%;
+  border: none;
+  padding: 10px;
+}
+.search-button{
+  background: lightcoral;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+}
+.recipes{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.home{
+  text-align: center;
+  margin: 0;
+  padding: 0px;
+}
+.home .hero{
+  background: url(https://cdn-media-1.freecodecamp.org/images/1*Wjs9dJlrtDyYtTYb073_Vg.jpeg)
+  no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  min-height: 400px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero p {
+  color: white;
+  padding: 20px 30px;
+  font-size: 30px; text-transform: uppercase;
+font-weight: 500;
+}
+.home .cards{
+  margin: 0;
+  padding: 30px 0;  
+}
+.cards .card-center{
+  width: 90vw;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  margin: 0 auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 30px;
+}
+
+
+/**************furniture store********************/
+.text-title{
+  font-family: 'Supermercado One', cursive;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.text-blue{
+  color: var(--mainBlue);
+}
+.text-light{
+  color:var(--lightBlue);
+}
+
+@media only screen and (max-width: 768px){
+  .proWrapper{
+    margin: 10px auto !important;
+  }
+  
+}
+
+.btnone{
+  margin-right: 10px;
+}
+.btnone>a{
+  color: #232528;
+  transition: all 0.5s ease-in-out;
+}
+.btnone>a:hover{
+  text-decoration: none;
+  color: white;
+}
+.btn-black{
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 10px !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 1px solid var(--mainDark) !important;
+}
+.btn-black:hover{
+  background: var(--mainDark) !important;
+  color: var(--mainWhite) !important;
+}
+.cart-icon{
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--mainYellow);
+}
